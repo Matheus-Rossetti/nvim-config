@@ -1,0 +1,46 @@
+return {
+    "nvim-treesitter/nvim-treesitter", branch = 'master', lazy = false, build = ":TSUpdate",
+    config = function()
+        local configs = require("nvim-treesitter.configs")
+
+        configs.setup({
+            ensure_installed = {
+                "lua",
+                "go",
+                "gomod",
+                "gosum",
+                "dart",
+                "javascript",
+                "bash",
+                "c",
+                "c_sharp",
+                "cpp",
+                "css",
+                "csv",
+                "desktop",
+                "dockerfile",
+                "gitignore",
+                "graphql",
+                "html",
+                "http",
+                "hyprlang",
+                "java",
+                "json",
+                "kotlin",
+                "make",
+                "markdown",
+                "python",
+                "sql",
+                "ssh_config",
+                "terraform",
+                "tmux",
+                "typescript",
+                "vim",
+                "yaml",
+                "xml",
+            },
+            highlight = { enable = true },
+            indent = { enable = true },
+        })
+    end,
+}
