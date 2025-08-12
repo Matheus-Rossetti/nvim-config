@@ -3,7 +3,7 @@ return {
         "williamboman/mason.nvim",
         config = function()
             require("mason").setup()
-        end
+        end,
     },
     {
         "williamboman/mason-lspconfig.nvim",
@@ -19,9 +19,9 @@ return {
                     "omnisharp",
                     "rust_analyzer",
                 },
-                automatic_installation = true
+                automatic_installation = true,
             })
-        end
+        end,
     },
     {
         "neovim/nvim-lspconfig",
@@ -36,6 +36,6 @@ return {
             vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
             vim.keymap.set("n", "<leader>a", vim.lsp.buf.code_action, {})
-        end
-    }
+        end,
+    },
 }
