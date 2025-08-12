@@ -13,8 +13,4 @@ require("config.lazy")
 
 vim.cmd("colorscheme catppuccin-mocha")
 
-local builtin = require("telescope.builtin")
-vim.keymap.set("n", "<CR>", builtin.find_files, { desc = "Telescope find files" })
-
-vim.keymap.set("n", "<leader>e", ':Neotree<CR>', {}) 
 
