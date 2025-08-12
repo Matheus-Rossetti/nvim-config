@@ -9,7 +9,18 @@ return {
 
         null_ls.setup({
             sources = {
+                -- Lua
                 null_ls.builtins.formatting.stylua,
+
+                -- Python
+                null_ls.builtins.formatting.black,
+                null_ls.builtins.diagnostics.ruff,
+
+                -- Golang
+                null_ls.builtins.formatting.gofumpt,
+                null_ls.builtins.diagnostics.golangci_lint,
+
+                -- General
                 null_ls.builtins.completion.spell,
                 require("none-ls.diagnostics.eslint"),
             },
