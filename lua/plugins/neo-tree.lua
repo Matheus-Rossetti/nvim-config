@@ -10,6 +10,10 @@ return {
         lazy = false,
         config = function()
             vim.keymap.set("n", "<leader>e", ":Neotree<CR>", {})
+                filesystem = {
+                follow_current_file = true,
+                use_libuv_file_watcher = true,
+            }
         end,
     },
 }
