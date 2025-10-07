@@ -12,7 +12,6 @@ return {
 			},
 			mapping = {
 				["<Tab>"] = cmp.mapping.confirm({ select = true }), -- Enter confirma
-				["<Enter>"] = cmp.mapping.confirm({ select = true }), -- Enter confirma
 				["<C-j>"] = cmp.mapping.select_next_item(), -- Ctrl-j navega para baixo
 				["<C-k>"] = cmp.mapping.select_prev_item(), -- Ctrl-k navega para cima
 				["<C-Space>"] = cmp.mapping.complete(),
@@ -21,7 +20,7 @@ return {
 				{ name = "nvim_lsp" },
 			},
 			experimental = {
-				ghost_text = true,
+				ghost_text = false,
 				native_menu = false,
 			},
             window = {
