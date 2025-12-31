@@ -1,8 +1,8 @@
 vim.cmd("set scrolloff=8")
 vim.cmd("set number")
 vim.cmd("set relativenumber")
-vim.cmd("set tabstop=4 softtabstop=4")
-vim.cmd("set shiftwidth=4")
+vim.cmd("set tabstop=2 softtabstop=2")
+vim.cmd("set shiftwidth=2")
 vim.cmd("set expandtab")
 vim.cmd("set smartindent")
 vim.cmd("set backupcopy=no")
@@ -10,13 +10,9 @@ vim.cmd("set backupcopy=no")
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
-require("config.lazy")
+require("plugin_manager.lazy")
 
 vim.cmd("colorscheme catppuccin-mocha")
-
-vim.diagnostic.config({
-  virtual_text = false,
-})
 
 vim.diagnostic.config({
     virtual_text = false,  -- Desativa o texto virtual (a mensagem completa do erro) ao lado do código
